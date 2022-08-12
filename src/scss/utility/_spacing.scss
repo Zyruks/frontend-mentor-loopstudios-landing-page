@@ -12,6 +12,16 @@
   }
 }
 
+.container {
+  width: 100%;
+  @include breakpoint(large) {
+    display: flex;
+    align-items: center;
+
+    justify-content: center;
+  }
+}
+
 .dp-flex {
   display: flex;
 }
