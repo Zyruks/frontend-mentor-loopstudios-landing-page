@@ -6,6 +6,7 @@ $font-sizes: (
   "200": em(8),
   "300": em(12),
   "400": em(16),
+  "450": em(20),
   "500": em(32),
   "600": em(48),
   "700": em(64),
@@ -26,10 +27,8 @@ $font-weights: (
 );
 
 $font-families: (
-  "primary": serif,
-  "secondary": sans-serif,
-  "body": var(--ff-primary),
-  "headings": var(--ff-primary),
+  "primary": "Alata",
+  "secondary": "Josefin Sans",
 );
 
 $line-heights: (
