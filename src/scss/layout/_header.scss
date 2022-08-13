@@ -4,15 +4,25 @@
 ? #header 
 \* ******************* */
 .header {
-  max-inline-size: rem(1200);
-
   display: flex;
   align-items: center;
   justify-content: space-between;
+  inline-size: 100%;
+  margin-inline: auto;
 
   background-color: rgba(0, 0, 0, 0%);
+  max-inline-size: rem(1200);
   @include breakpoint(large) {
     margin-block-start: rem(50);
+  }
+}
+
+.header .container {
+  @include breakpoint(large) {
+    display: flex;
+    align-items: center;
+
+    justify-content: center;
   }
 }
 
@@ -32,6 +42,10 @@
 
     padding: 0;
     padding-inline-start: 5%;
+  }
+
+  @include breakpoint(x-large) {
+    padding: 0;
   }
 }
 
@@ -86,7 +100,7 @@
 .menu {
   display: flex;
   flex-direction: column;
-  gap: rem(26);
+  gap: rem(34);
   align-items: flex-start;
   justify-content: center;
   block-size: 100%;
@@ -99,9 +113,6 @@
     padding-inline-start: rem(36);
     margin: 0;
   }
-  @include breakpoint(x-large) {
-    gap: rem(60);
-  }
 }
 
 .menu__item {
@@ -110,18 +121,44 @@
   display: flex;
 
   cursor: pointer;
+  opacity: 0%;
+
+  &:nth-child(1) {
+    animation: anima-enter 300ms ease-in-out forwards;
+    animation-delay: 200ms;
+  }
+
+  &:nth-child(2) {
+    animation: anima-enter 300ms ease-in-out forwards;
+    animation-delay: 300ms;
+  }
+
+  &:nth-child(3) {
+    animation: anima-enter 300ms ease-in-out forwards;
+    animation-delay: 400ms;
+  }
+
+  &:nth-child(4) {
+    animation: anima-enter 300ms ease-in-out forwards;
+    animation-delay: 500ms;
+  }
+
+  &:nth-child(5) {
+    animation: anima-enter 300ms ease-in-out forwards;
+    animation-delay: 600ms;
+  }
 
   &::after {
     position: absolute;
 
     opacity: 0%;
 
-    transition: opacity 400ms ease-in-out;
+    transition: opacity 400ms ease-in-out, inline-size 400ms ease-in-out;
 
     content: "";
     inset-block-end: rem(-8);
     inset-inline-start: 0;
-    inline-size: 50%;
+    inline-size: 0%;
     border-block-end: rem(1) solid var(--clr-neutral-100);
 
     @include breakpoint(large) {
@@ -132,7 +169,13 @@
   &:hover,
   &:focus-visible {
     &::after {
+      inline-size: 70%;
+
       opacity: 100%;
+
+      @include breakpoint(large) {
+        inline-size: 50%;
+      }
     }
   }
 }

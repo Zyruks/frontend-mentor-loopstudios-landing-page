@@ -18,14 +18,14 @@ p {
 
 .font-nav {
   font-weight: var(--fw-300);
-  font-size: var(--fs-500);
+  font-size: var(--fs-nav);
   font-family: var(--ff-headings);
   text-align: start;
   text-transform: uppercase;
 
   @include breakpoint(large) {
     font-weight: var(--fw-600);
-    font-size: var(--fs-450);
+    font-size: var(--fs-nav);
     text-align: end;
     text-transform: capitalize;
   }

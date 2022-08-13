@@ -47,7 +47,7 @@
   }
 
   --fs-body: var(--fs-400);
-  --fs-primary-heading: var(--fs-800);
+  --fs-primary-heading: var(--fs-550);
   --fs-secondary-heading: var(--fs-700);
   --fs-nav: var(--fs-500);
   --fs-button: var(--fs-300);
@@ -56,8 +56,8 @@
 @include breakpoint(large) {
   :root {
     --fs-body: var(--fs-500);
-    --fs-primary-heading: var(--fs-900);
+    --fs-primary-heading: var(--fs-700);
     --fs-secondary-heading: var(--fs-800);
-    --fs-nav: var(--fs-300);
+    --fs-nav: var(--fs-450);
   }
 }

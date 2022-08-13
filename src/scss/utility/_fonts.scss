@@ -16,6 +16,8 @@
 .fs-primary-heading {
   font-size: var(--fs-primary-heading);
   line-height: var(--lh-300);
+  text-transform: uppercase;
+  font-weight: var(--fw-300);
 }
 
 .fs-secondary-heading {
