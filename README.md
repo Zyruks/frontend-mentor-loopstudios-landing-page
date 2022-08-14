@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Github](#)
-- Live Site URL: [Vercel](#)
+- Solution URL: [Github](https://github.com/Zyruks/frontend-mentor-loopstudios-landing-page)
+- Live Site URL: [Vercel](https://frontend-mentor-loopstudios-landing-page-zyruks.vercel.app/)
 
 ## My process
 
