@@ -80,7 +80,7 @@
 .gallery-grid .grid-item:hover .gradient-blend {
   background: var(--clr-neutral-100);
   opacity: 50%;
-  mix-blend-mode: luminosity;
+  mix-blend-mode: normal;
 }
 
 .gallery-grid .grid-item:hover .image-text {

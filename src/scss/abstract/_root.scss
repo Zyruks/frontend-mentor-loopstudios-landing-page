@@ -63,8 +63,8 @@
 @include breakpoint(large) {
   :root {
     --fs-body: var(--fs-400);
-    --fs-primary-heading: var(--fs-700);
+    --fs-primary-heading: var(--fs-750);
     --fs-secondary-heading: var(--fs-550);
-    --fs-nav: var(--fs-450);
+    --fs-nav: var(--fs-400);
   }
 }
