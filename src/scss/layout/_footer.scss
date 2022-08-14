@@ -2,8 +2,12 @@
 
 .footer {
   position: relative;
+  padding-inline: 5%;
 
   background-color: var(--clr-neutral-900);
+  @include breakpoint(x-large) {
+    padding-inline: 5%;
+  }
 }
 
 .footer .container {
@@ -26,7 +30,7 @@
 }
 
 .footer-nav {
-  inline-size: 80%;
+  inline-size: 60%;
 }
 
 .footer-list {
@@ -57,6 +61,8 @@
   display: flex;
   gap: var(--size-400);
   align-items: center;
+  justify-content: center;
+  inline-size: 100%;
 
   .hover-state {
     position: relative;
@@ -76,6 +82,7 @@
   }
   @include breakpoint(large) {
     justify-content: flex-start;
+    inline-size: 60%;
   }
 }
 
