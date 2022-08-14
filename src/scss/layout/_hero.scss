@@ -12,6 +12,7 @@
   inset-block-start: 0;
   block-size: 100vh;
   inline-size: 100vw;
+  max-block-size: rem(800);
 
   @include breakpoint(small) {
     background-image: url("../assets/images/desktop/image-hero.jpg");
