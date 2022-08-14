@@ -63,3 +63,36 @@
     color: var(--clr-neutral-100);
   }
 }
+
+.hover-state {
+  &::after {
+    position: absolute;
+
+    opacity: 0%;
+
+    transition: opacity 400ms ease-in-out, inline-size 400ms ease-in-out;
+
+    content: "";
+    inset-block-end: rem(-8);
+    inset-inline-start: 0;
+    inline-size: 0%;
+    border-block-end: rem(1) solid var(--clr-neutral-100);
+
+    @include breakpoint(large) {
+      inset-inline-start: 25%;
+    }
+  }
+
+  &:hover,
+  &:focus-visible {
+    &::after {
+      inline-size: 70%;
+
+      opacity: 100%;
+
+      @include breakpoint(large) {
+        inline-size: 50%;
+      }
+    }
+  }
+}
