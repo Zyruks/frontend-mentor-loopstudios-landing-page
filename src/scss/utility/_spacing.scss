@@ -12,4 +12,14 @@
   }
 }
 
+.container {
+  width: 100%;
+  position: relative;
+  max-width: rem(1200);
+  margin: 0 auto;
+}
+
+.dp-flex {
+  display: flex;
+}
 /* utility classes end*/
